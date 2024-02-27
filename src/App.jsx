@@ -1,33 +1,44 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import './App.scss'
+// import 'normalize.css'
+// import './reset.css'
+// import 'normalize.css'
+import MediumIcon from './components/MediumIcon/MediumIcon'
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <header class='main-header'>
+        <section>
+          <MediumIcon></MediumIcon>
+          <input type='text'></input>
+        </section>
+        <nav>
+          <button>write</button>
+          <button>Sign up</button>
+          <button>Sign in</button>
+          <button>avatar</button>
+        </nav>
+      </header>
+      <main>
+        <article>
+          <header>
+            <h1>React & Javascript Optimization Techniques</h1>
+          </header>
+          <section>Author data & date</section>
+          <section>Like & Share section</section>
+          <section>Image and source</section>
+          <section>Content</section>
+          <footer>
+            <section>tags</section>
+            <section>Like & Share section</section>
+          </footer>
+        </article>
+        <section>
+          <section>Author info</section>
+          <section>More from author</section>
+        </section>
+      </main>
+
+      <footer>footer</footer>
     </>
   )
 }

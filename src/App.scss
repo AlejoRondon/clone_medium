@@ -1,0 +1,24 @@
+@use 'sass:list';
+@use 'sass:math';
+@import 'colors.scss';
+@import 'normalize.css/normalize.css';
+
+// $primary: dodgerblue;
+
+@debug 1;
+@mixin default-border {
+  border: 1px+ 1px $primary-color dotted;
+}
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+header {
+  @include default-border;
+  padding: 1em;
+  nav {
+    display: flex;
+  }
+}
