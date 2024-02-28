@@ -1,0 +1,33 @@
+.search-bar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 1.3rem;
+
+  .search-bar__input {
+    position: relative;
+
+    width: auto; /* Occupy full width of the container */
+    height: 70%; /* Occupy full height of the container */
+
+    padding: 1rem 0 1rem 3.3rem; /* Adjust to accommodate icon width and padding */
+    font-size: 1.4rem;
+
+    border: none;
+    border-radius: 100rem;
+
+    background-color: rgba(204, 204, 204, 0.2);
+
+    &:focus {
+      outline: none; /* Change outline color when input is focused */
+    }
+  }
+
+  .search-bar__icon {
+    color: #818181;
+    position: absolute;
+    left: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

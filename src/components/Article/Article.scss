@@ -1,0 +1,13 @@
+.article {
+  .article__content-wrapper {
+    width: 90%;
+    margin: 0 auto;
+
+    .article__header {
+      background-color: antiquewhite;
+      .article__title {
+        background-color: blue;
+      }
+    }
+  }
+}

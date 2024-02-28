@@ -1,15 +1,14 @@
 import './App.scss'
-// import 'normalize.css'
-// import './reset.css'
-// import 'normalize.css'
+import SearchBar from './components/SearchBar/SearchBar'
 import MediumIcon from './components/MediumIcon/MediumIcon'
+import Article from './components/Article/Article'
 function App() {
   return (
     <>
-      <header class='main-header'>
-        <section>
+      <header className='top-header'>
+        <section className='top-header__wrapper'>
           <MediumIcon></MediumIcon>
-          <input type='text'></input>
+          <SearchBar></SearchBar>
         </section>
         <nav>
           <button>write</button>
@@ -19,25 +18,12 @@ function App() {
         </nav>
       </header>
       <main>
-        <article>
-          <header>
-            <h1>React & Javascript Optimization Techniques</h1>
-          </header>
-          <section>Author data & date</section>
-          <section>Like & Share section</section>
-          <section>Image and source</section>
-          <section>Content</section>
-          <footer>
-            <section>tags</section>
-            <section>Like & Share section</section>
-          </footer>
-        </article>
-        <section>
-          <section>Author info</section>
-          <section>More from author</section>
+        <Article></Article>
+        <section className='more-about'>
+          <section className='more-about__author'>Author info</section>
+          <section className='more-about__author-articles'>More from author</section>
         </section>
       </main>
-
       <footer>footer</footer>
     </>
   )

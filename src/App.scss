@@ -5,20 +5,32 @@
 
 // $primary: dodgerblue;
 
-@debug 1;
+$primary-d: 1rem;
+
+@debug $primary-d; // Output the value of $primary-color to the console
+@debug 1rem;
 @mixin default-border {
   border: 1px+ 1px $primary-color dotted;
 }
 
-.main-header {
+.top-header {
+  // @include default-border;
   display: flex;
   justify-content: space-between;
-}
-
-header {
-  @include default-border;
+  height: 2.5rem;
+  overflow: hidden;
+  border-bottom: solid 1px #f2f2f2;
   padding: 1em;
+
+  .top-header__wrapper {
+    display: flex;
+    align-items: center;
+  }
+
   nav {
     display: flex;
   }
 }
+
+// main {
+// }

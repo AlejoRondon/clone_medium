@@ -1,7 +1,10 @@
-import React from 'react'
-import './MediumIcon.css'
+import './MediumIcon.scss'
 function MediumIcon() {
-  return <img className='medium-icon' src='/images/medium_logo.png' alt='medium logo' />
+  return (
+    // <a href='#'>
+    <img className='medium-icon' src='/images/medium_logo.png' alt='medium logo' />
+    // </a>
+  )
 }
 
 export default MediumIcon

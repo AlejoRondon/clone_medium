@@ -1,0 +1,28 @@
+html {
+  font-family: sohne, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 62.5%; /* 1rem = 10px, making calculations easier */
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 1.6rem; /* 16px */
+  line-height: 1.5;
+}
+
+/* Media query for tablets */
+@media screen and (max-width: 768px) {
+  :root {
+    font-size: 50%; /* Reduce the base font size to 50% for smaller screens */
+  }
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 480px) {
+  :root {
+    font-size: 40%; /* Further reduce the base font size to 40% for even smaller screens */
+  }
+}
