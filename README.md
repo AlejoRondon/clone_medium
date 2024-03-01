@@ -1,8 +1,8 @@
-# React + Vite
+## Usage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1.  run `npm run dbserver` to start json-server: `json-server` will serve `\src\services\db.json` which is the file that contains all the information that will be displayed in the UI.
+2.  run `npm run dev`: When the project is ran, it fetch the information from the local `json-server` and render the page
 
-Currently, two official plugins are available:
+## Why
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+_"I simply wanted to challenge myself and, definitely, I learned a lot. I know, I have a long path a head but ... I'm fast learner :D"_

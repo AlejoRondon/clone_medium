@@ -1,0 +1,10 @@
+.medium_article__image {
+  display: flex;
+  justify-content: center;
+  margin: 5rem 0;
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
